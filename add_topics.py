@@ -113,6 +113,7 @@ def read_csv():
 			login(gconfid,topics)
 	except Exception as e:
 		print "-------------  CSV File Error :", e , "-------------"
+		logging.error("CSV ERROR : "+ e)
 		print("Please check csv file : \n 1. It should be filed speredte by ;(semicolon) \n 2. Topics seprated by ,(comma)")
 		print("Please see help page")
 		print "\tpython2 ",sys.argv[0] ," --help or -h"
