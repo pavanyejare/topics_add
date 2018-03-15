@@ -75,7 +75,8 @@ def login(gconfid,topics):
 		error=update.json().get('error')
 		write_faild(gconfid,topics)
 		print ("Error: Update topics faild -"+error)
-		
+		logging.error("Update topics faild - "+ gconfid +":"+error)		
+
 	else :
 		print "Success: "+gconfid+"\tAdded topics for"
 		logging.info("Success : Added topics for "+ gconfid)
@@ -116,7 +117,6 @@ def read_csv():
 		print("Please see help page")
 		print "\tpython2 ",sys.argv[0] ," --help or -h"
 		print "-------------  CSV File Error -------------"
-		exit()
 def main():
 	if len(sys.argv) <= 1:
 		man()
