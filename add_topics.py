@@ -33,11 +33,11 @@ import logging
 ###########################################################################################
 
 
-CLIENT_ID="cibacd4c6fe19e4023abea0e64991c360b"
-SECRET_KEY="sk891dc6ee5fd14a0fbb13ddfb7084be01"
-DOMAIN_NAME="ktpl.kpoint.com"
-EMAIL="ksupport@kpoint.com"
-DISPLAYNAME="Site Administrator"
+CLIENT_ID=""
+SECRET_KEY=""
+DOMAIN_NAME=""
+EMAIL=""
+DISPLAYNAME=""
 
 def initLogger() :
     log_file =  "topics_status.log"
